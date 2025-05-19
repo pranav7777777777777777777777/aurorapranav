@@ -521,7 +521,7 @@ $(function () {
 
 });
 
-// if(screen.width < 769){     $('.mobile-footer').hide(); }
+
 
 $(window).scroll(function () {
 
@@ -531,8 +531,8 @@ $(window).scroll(function () {
     if (screen.width < 991) {
         if ($(window).scrollTop() >  10) {            
             $('.mobile-footer').fadeIn("slow");
-            // console.log($(window).scrollTop());
-            if ($(window).scrollTop() >  460)//to complete a blog and show in blogs_list page
+           
+            if ($(window).scrollTop() >  460)
 
              $('.lets-talk-button').fadeIn("slow");
 
@@ -555,17 +555,17 @@ $('.mobile-footer-dropdown').on('click', function (e) {
     $(this)
         .find('.mobile-footer-dropdown-menu')
         .attr("class","mobile-footer-dropdown-menu show")
-        //alert();
+        
 })
 
 $(".mobile-footer-dropdown-menu a[data]").click(function (e) {
-    //added the data attribute to the selector prevent default href action
+
     e.preventDefault();
-    //change url
+
     location.href = $(this).attr("data");
 });
 
-//jquery unveil plugin for lazy loading
+
     $(document).ready(function() {
         $("img").unveil(200);
     });
